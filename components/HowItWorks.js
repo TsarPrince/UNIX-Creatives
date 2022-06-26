@@ -21,7 +21,7 @@ export const HowItWorks = () => {
         </div>
 
         <div className='flex flex-col justify-center items-center overflow-hidden pt-8 md:flex-row lg:space-x-6'>
-          <img src="/howItWorks_submit.png" width={248} height={288} alt='How it Works - Submit' ></img>
+          <Image src="/howItWorks_submit.png" width={248} height={288} alt='How it Works - Submit' ></Image>
           <div className='hidden md:inline'>
             <svg width="70" height="60" viewBox="0 0 70 60" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fillRule="evenodd" clipRule="evenodd" d="M62.9639 29.8777C42.8661 27.7669 22.2195 29.9732 2.05479 29.7025Z" fill="#161C2D" />
@@ -30,7 +30,7 @@ export const HowItWorks = () => {
               <path d="M58.3094 22.9117C58.9168 27.2988 59.1444 31.6961 59.6787 36.083C62.1909 33.8575 66.1319 32.2315 68.2803 29.7016C68.7086 29.1977 66.4928 27.4133 66.2243 27.1858C64.0132 25.3144 60.7501 24.1857 58.188 22.8311" stroke="#161C2D" strokeWidth="2.42952" strokeMiterlimit="1.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
-          <img src="/howItWorks_review.png" width={248} height={288} alt='How it Works - Review'></img>
+          <Image src="/howItWorks_review.png" width={248} height={288} alt='How it Works - Review'></Image>
           <div className='hidden md:inline'>
             <svg width="70" height="60" viewBox="0 0 70 60" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fillRule="evenodd" clipRule="evenodd" d="M62.9639 29.8777C42.8661 27.7669 22.2195 29.9732 2.05479 29.7025Z" fill="#161C2D" />
@@ -39,7 +39,7 @@ export const HowItWorks = () => {
               <path d="M58.3094 22.9117C58.9168 27.2988 59.1444 31.6961 59.6787 36.083C62.1909 33.8575 66.1319 32.2315 68.2803 29.7016C68.7086 29.1977 66.4928 27.4133 66.2243 27.1858C64.0132 25.3144 60.7501 24.1857 58.188 22.8311" stroke="#161C2D" strokeWidth="2.42952" strokeMiterlimit="1.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
-          <img src="/howItWorks_approve.png" width={248} height={288} alt='How it Works - Approve'></img>
+          <Image src="/howItWorks_approve.png" width={248} height={288} alt='How it Works - Approve'></Image>
         </div>
 
         <div className="mt-10">
