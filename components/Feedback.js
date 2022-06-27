@@ -19,7 +19,7 @@ export const Feedback = () => {
               <div className='font-semibold'>
                 <p className=''>Adam Smith</p>
                 <p className='space-x-2'>
-                  <span className='text-indigo-500'>Anchor Travels</span>
+                  <span className='text-blue-500'>Anchor Travels</span>
                   <span className='text-slate-500'>CEO</span>
                 </p>
               </div>
@@ -39,7 +39,7 @@ export const Feedback = () => {
               <div className='font-semibold'>
                 <p className=''>Adam Smith</p>
                 <p className='space-x-2'>
-                  <span className='text-indigo-500'>Polar Coding</span>
+                  <span className='text-blue-500'>Polar Coding</span>
                   <span className='text-slate-500'>MD</span>
                 </p>
               </div>

@@ -49,7 +49,7 @@ export const Features = () => {
                   <th scope="col" className='px-4 py-4 md:px-12 md:py-6 text-lg font-normal'>Marketplace</th>
                   <th scope="col" className='px-4 py-4 md:px-12 md:py-6 text-lg font-normal'>In-House Team</th>
                   <th scope="col" className='px-4 py-4 md:px-12 md:py-6 text-lg font-normal'>Agencies</th>
-                  <th scope="col" className='px-4 py-4 md:px-12 md:py-6 text-lg font-normal bg-indigo-600'>Unik Creatives</th>
+                  <th scope="col" className='px-4 py-4 md:px-12 md:py-6 text-lg font-normal bg-blue-600'>Unik Creatives</th>
                 </tr>
               </thead>
               <tbody>

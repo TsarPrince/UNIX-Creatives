@@ -10,7 +10,7 @@ export const Footer = () => {
           <div>
             <Image src="/logo_white.svg" width={127} height={24} alt='UNIK Creatives logo'></Image>
           </div>
-          <div className='max-w-xs text-xl'>
+          <div className='max-w-xs text-lg'>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam</p>
           </div>
           <div className='flex items-center space-x-4'>
@@ -37,19 +37,19 @@ export const Footer = () => {
             <h2 className='text-white text-xl'>Services</h2>
             <ul className='space-y-2'>
               <li>
-                <Link href="/"><a>Pricing</a></Link>
+                <Link href="/"><a className='hover:text-slate-200'>Pricing</a></Link>
               </li>
               <li>
-                <Link href="/"><a>Our Work</a></Link>
+                <Link href="/"><a className='hover:text-slate-200'>Our Work</a></Link>
               </li>
               <li>
-                <Link href="/"><a>FAQ</a></Link>
+                <Link href="/"><a className='hover:text-slate-200'>FAQ</a></Link>
               </li>
               <li>
-                <Link href="/"><a>Reviews</a></Link>
+                <Link href="/"><a className='hover:text-slate-200'>Reviews</a></Link>
               </li>
               <li>
-                <Link href="/"><a>Blog</a></Link>
+                <Link href="/"><a className='hover:text-slate-200'>Blog</a></Link>
               </li>
             </ul>
           </div>
@@ -57,19 +57,19 @@ export const Footer = () => {
             <h2 className='text-white text-xl'>Company</h2>
             <ul className='space-y-2'>
               <li>
-                <Link href="/"><a>Pricing</a></Link>
+                <Link href="/"><a className='hover:text-slate-200'>Pricing</a></Link>
               </li>
               <li>
-                <Link href="/"><a>Our Work</a></Link>
+                <Link href="/"><a className='hover:text-slate-200'>Our Work</a></Link>
               </li>
               <li>
-                <Link href="/"><a>FAQ</a></Link>
+                <Link href="/"><a className='hover:text-slate-200'>FAQ</a></Link>
               </li>
               <li>
-                <Link href="/"><a>Reviews</a></Link>
+                <Link href="/"><a className='hover:text-slate-200'>Reviews</a></Link>
               </li>
               <li>
-                <Link href="/"><a>Blog</a></Link>
+                <Link href="/"><a className='hover:text-slate-200'>Blog</a></Link>
               </li>
             </ul>
           </div>
@@ -81,23 +81,23 @@ export const Footer = () => {
             <input type='email' placeholder='Email address' className='bg-gray-800 border border-slate-400 px-4 py-2'></input>
             <textarea placeholder='Message' className='bg-gray-800 border border-slate-400 px-4 py-2'></textarea>
           </form>
-          <button className='bg-indigo-600 text-slate-50 w-full text-lg px-8 py-3 rounded-md shadow-md font-medium select-none hover:shadow-lg hover:bg-indigo-700'>
+          <button className='bg-blue-600 text-slate-50 w-full text-lg px-8 py-3 rounded-md shadow-md font-medium select-none hover:shadow-lg hover:bg-blue-700'>
             <Link href='/'><a>Submit</a></Link>
           </button>
         </div>
       </div>
 
-      <div className='px-12 py-16 text-center space-y-6 lg:flex lg:justify-between lg:px-44 lg:py-8 lg:space-y-0'>
+      <div className='py-8 md:px-12 md:py-16 text-center space-y-6 lg:flex lg:justify-between lg:px-44 lg:py-8 lg:space-y-0'>
         <div>
-          <p className='text-lg'>Copyright &#169; 2022 UNIK Creatives</p>
+          <p className='md:text-lg'>Copyright &#169; 2022 UNIK Creatives</p>
         </div>
-        <div className='space-y-2 text-lg lg:flex lg:space-y-0 lg:space-x-2'>
+        <div className='space-y-2 md:text-lg lg:flex lg:space-y-0 lg:space-x-2'>
           <p>All Rights Reserved</p>
           <span className='hidden lg:inline border-r-2 mx-2'></span>
           <p>
-            <Link href='/'><a className='text-indigo-500 underline'>Terms and Conditions</a></Link>
+            <Link href='/'><a className='text-blue-500 underline hover:text-blue-600'>Terms and Conditions</a></Link>
             <span className='border-r-2 mx-2'></span>
-            <Link href='/'><a className='text-indigo-500 underline'>Privacy Policy</a></Link>
+            <Link href='/'><a className='text-blue-500 underline hover:text-blue-600'>Privacy Policy</a></Link>
           </p>
         </div>
       </div>
