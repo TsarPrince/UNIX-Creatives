@@ -1,4 +1,17 @@
-import React from 'react'
+import React, {useState} from 'react'
+
+function Question({heading,description}){
+  const [isOpen,setIsOpen]=useState(false);
+  return <div onClick={()=>setIsOpen(old=>!old)} className='bg-white p-8 mb-4 rounded-lg shadow-lg lg:max-w-lg' >
+    <div className={'flex'}>
+      <p className='text-lg md:text-xl font-semibold text-slate-600 inline cursor-pointer flex-grow' style={{paddingRight:50}}>{heading}</p>
+      <button style={{height:41, width:41, color:(isOpen?"white":"#6F6C90"), backgroundColor:(isOpen?"#2F55D4":"#F7F7FF"), fontSize:25, fontWeight:700}} className={'bg-blue-600 text-slate-50 text-lg rounded-md shadow-md font-medium select-none hover:bg-blue-700 flex-shrink-0'}>{isOpen?"-":"+"}</button>
+    </div>
+    {isOpen&&<div className='pt-8 md:pr-16 md:text-lg text-slate-500'>
+      <p style={{fontFamily:"DM Sans"}}>{description}</p>
+    </div>}
+  </div>
+}
 
 export const FAQ = () => {
   return (
@@ -10,54 +23,18 @@ export const FAQ = () => {
         </div>
 
         <div className='bg-slate-100 mt-10 px-4 py-6 md:px-12 md:py-14 rounded-3xl md:grid md:grid-cols-2 items-start md:gap-x-4'>
-          <details className='bg-white p-8 mb-4 rounded-lg shadow-lg max-w-lg' open>
-            <summary>
-              <p className='text-lg md:text-xl font-semibold text-slate-600 inline'>Do I get unlimited creatives?</p>
-            </summary>
-            <div className='pt-8 md:pr-16 md:text-lg text-slate-500'>
-              <p>No, you have a set limit based on the monthly plan you join. However, you do get unlimited logo designs and general graphic design requests.</p>
-            </div>
-          </details>
-          <details className='bg-white p-8 mb-4 rounded-lg shadow-lg max-w-lg'>
-            <summary>
-              <p className='text-lg md:text-xl font-semibold text-slate-600 inline'>How long does it take to receive my creatives back?</p>
-            </summary>
-            <div className='pt-8 md:pr-16 md:text-lg text-slate-500'>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu massa eleifend, vehicula augue et, vulputate ante. Maecenas nec nulla quis purus lacinia egestas.</p>
-            </div>
-          </details>
-          <details className='bg-white p-8 mb-4 rounded-lg shadow-lg max-w-lg'>
-            <summary>
-              <p className='text-lg md:text-xl font-semibold text-slate-600 inline'>How does the Video Ad Creatives work?</p>
-            </summary>
-            <div className='pt-8 md:pr-16 md:text-lg text-slate-500'>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu massa eleifend, vehicula augue et, vulputate ante. Maecenas nec nulla quis purus lacinia egestas.</p>
-            </div>
-          </details>
-          <details className='bg-white p-8 mb-4 rounded-lg shadow-lg max-w-lg'>
-            <summary>
-              <p className='text-lg md:text-xl font-semibold text-slate-600 inline'>How does the Image Ad Creatives work?</p>
-            </summary>
-            <div className='pt-8 md:pr-16 md:text-lg text-slate-500'>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu massa eleifend, vehicula augue et, vulputate ante. Maecenas nec nulla quis purus lacinia egestas.</p>
-            </div>
-          </details>
-          <details className='bg-white p-8 mb-4 rounded-lg shadow-lg max-w-lg'>
-            <summary>
-              <p className='text-lg md:text-xl font-semibold text-slate-600 inline'>What if I need over 50 creatives per day?</p>
-            </summary>
-            <div className='pt-8 md:pr-16 md:text-lg text-slate-500'>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu massa eleifend, vehicula augue et, vulputate ante. Maecenas nec nulla quis purus lacinia egestas.</p>
-            </div>
-          </details>
-          <details className='bg-white p-8 mb-4 rounded-lg shadow-lg max-w-lg'>
-            <summary>
-              <p className='text-lg md:text-xl font-semibold text-slate-600 inline'>Who works on my requests?</p>
-            </summary>
-            <div className='pt-8 md:pr-16 md:text-lg text-slate-500'>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu massa eleifend, vehicula augue et, vulputate ante. Maecenas nec nulla quis purus lacinia egestas.</p>
-            </div>
-          </details>
+          <div>
+            <Question description={'No, you have a set limit based on the monthly plan you join. However, you do get unlimited logo designs and general graphic design requests.'} heading={'Do I get unlimited creatives?'}/>
+            <Question description={'No, you have a set limit based on the monthly plan you join. However, you do get unlimited logo designs and general graphic design requests.'} heading={'How long does it take to receive my creatives back?'}/>
+            <Question description={'No, you have a set limit based on the monthly plan you join. However, you do get unlimited logo designs and general graphic design requests.'} heading={'How does the Video Ad Creatives work?'}/>
+          </div>
+          <div>
+
+            <Question description={'No, you have a set limit based on the monthly plan you join. However, you do get unlimited logo designs and general graphic design requests.'} heading={'How does the Image Ad Creatives work?'}/>
+            <Question description={'No, you have a set limit based on the monthly plan you join. However, you do get unlimited logo designs and general graphic design requests.'} heading={'What if I need over 50 creatives per day?'}/>
+            <Question description={'No, you have a set limit based on the monthly plan you join. However, you do get unlimited logo designs and general graphic design requests.'} heading={'Who works on my requests?'}/>
+
+          </div>
 
         </div>
       </div>
