@@ -8,7 +8,7 @@ import { Pricing } from '../components/Pricing'
 import { Features } from '../components/Features'
 import { Feedback } from '../components/Feedback'
 import { Footer } from '../components/Footer'
-import { FAQ } from '../components/FAQ'
+import { Index } from '../components/FAQ'
 
 export default function Home() {
   return (
@@ -32,7 +32,7 @@ export default function Home() {
       <Pricing />
       <Features />
       <Feedback />
-      <FAQ />
+      <Index />
       <Footer />
 
     </div>

@@ -1,11 +1,11 @@
 import React, {useState} from 'react'
-
+import styles from './styles.module.scss';
 function Question({heading,description}){
   const [isOpen,setIsOpen]=useState(false);
   return <div onClick={()=>setIsOpen(old=>!old)} className='bg-white p-8 mb-4 rounded-lg shadow-lg lg:max-w-lg' >
     <div className={'flex'}>
       <p className='text-lg md:text-xl font-semibold text-slate-600 inline cursor-pointer flex-grow' style={{paddingRight:50}}>{heading}</p>
-      <button style={{height:41, width:41, color:(isOpen?"white":"#6F6C90"), backgroundColor:(isOpen?"#2F55D4":"#F7F7FF"), fontSize:25, fontWeight:700}} className={'bg-blue-600 text-slate-50 text-lg rounded-md shadow-md font-medium select-none hover:bg-blue-700 flex-shrink-0'}>{isOpen?"-":"+"}</button>
+      <button className={isOpen?styles.faqButtonOpen:styles.faqButtonClosed}>{isOpen?"-":"+"}</button>
     </div>
     {isOpen&&<div className='pt-8 md:pr-16 md:text-lg text-slate-500'>
       <p style={{fontFamily:"DM Sans"}}>{description}</p>
@@ -13,7 +13,7 @@ function Question({heading,description}){
   </div>
 }
 
-export const FAQ = () => {
+export const Index = () => {
   return (
     <div className="py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
