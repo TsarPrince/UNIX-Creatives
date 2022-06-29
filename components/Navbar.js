@@ -49,12 +49,7 @@ export const Navbar = () => {
         </div>
         <div className='lg:hidden'>
           <button className='rounded-md p-3 focus:ring-4' onClick={showHiddenNavbarContent}>
-            <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="0.567871" y="0.0957031" width="23.4326" height="2.78481" fill="#161C2D" />
-              <rect x="0.567871" y="8.24902" width="23.4326" height="2.78481" fill="#161C2D" />
-              <rect x="0.567871" y="16.4033" width="5.39473" height="2.78481" fill="#2F55D4" />
-              <rect x="9.5835" y="16.4033" width="14.4168" height="2.78481" fill="#161C2D" />
-            </svg>
+            <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <rect x="0.567871" y="0.0957031" width="23.4326" height="2.78481" fill="#161C2D" /> <rect x="0.567871" y="8.24902" width="23.4326" height="2.78481" fill="#161C2D" /> <rect x="0.567871" y="16.4033" width="5.39473" height="2.78481" fill="#2F55D4" /> <rect x="9.5835" y="16.4033" width="14.4168" height="2.78481" fill="#161C2D" /> </svg>
           </button>
         </div>
       </div>
