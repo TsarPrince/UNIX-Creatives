@@ -39,10 +39,10 @@ export const Header = () => {
                 <Image src="/HeaderImg.svg" width={582} height={387} alt='Header decorative img'></Image>
               </div>
               <div className='space-x-2 sm:space-x-8 lg:text-left'>
-                <button className='bg-blue-600 text-slate-50 text-lg px-4 py-2 md:px-8 md:py-3 rounded-md shadow-md font-medium select-none hover:shadow-lg hover:bg-blue-700'>
+                <button className='btn-rounded-md'>
                   <Link href='/'><a>Get Started</a></Link>
                 </button>
-                <button className='outline outline-offset-[-2px] outline-blue-600 text-blue-500 text-lg px-4 py-2 md:px-8 md:py-3 rounded-md font-medium select-none hover:shadow-lg hover:outline-transparent hover:bg-blue-700 hover:text-slate-50'>
+                <button className='btn-rounded-md-outline'>
                   <Link href='/'><a>Schedule Demo</a></Link>
                 </button>
               </div>

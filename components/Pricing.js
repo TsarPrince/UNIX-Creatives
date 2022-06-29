@@ -163,7 +163,7 @@ export const Pricing = () => {
                           </div>
                         </div>
                         <div className='text-center lg:absolute lg:top-0 lg:right-0 lg:-translate-x-8 lg:translate-y-8'>
-                          <button className='bg-blue-600 text-slate-50 md:text-lg px-4 py-3 md:px-8 md:py-3 rounded-full shadow-md font-medium select-none hover:shadow-lg hover:bg-blue-700'>
+                          <button className='btn-rounded-full'>
                             <Link href='/'><a>Choose Plan ${plan.price}/month</a></Link>
                           </button>
                         </div>

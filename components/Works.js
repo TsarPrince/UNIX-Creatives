@@ -107,7 +107,7 @@ export const Works = () => {
           </div>
         </div>
 
-        <button className='bg-blue-600 text-slate-50 text-lg px-8 py-3 rounded-md shadow-md font-medium select-none hover:shadow-lg hover:bg-blue-700'>
+        <button className='btn-rounded-md'>
           <Link href='/'><a>See all Creatives</a></Link>
         </button>
       </div>

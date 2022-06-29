@@ -4,7 +4,7 @@ function Question({heading,description}){
   const [isOpen,setIsOpen]=useState(false);
   return <div onClick={()=>setIsOpen(old=>!old)} className='bg-white p-8 mb-4 rounded-lg shadow-lg lg:max-w-lg' >
     <div className={'flex'}>
-      <p className='text-lg md:text-xl font-semibold text-slate-600 inline cursor-pointer flex-grow' style={{paddingRight:50}}>{heading}</p>
+      <p className='text-lg pr-[50px] md:text-xl font-semibold text-slate-600 inline cursor-pointer flex-grow'>{heading}</p>
       <button className={isOpen?styles.faqButtonOpen:styles.faqButtonClosed}>{isOpen?"-":"+"}</button>
     </div>
     {isOpen&&<div className='pt-8 md:pr-16 md:text-lg text-slate-500'>

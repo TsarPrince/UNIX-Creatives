@@ -20,7 +20,7 @@ export const Navbar = () => {
           <Link href='/'><a className='hover:text-slate-500'>Pricing</a></Link>
         </div>
         <div className='hidden lg:block'>
-          <button className='bg-blue-600 text-slate-50 text-lg px-8 py-3 rounded-md shadow-md font-medium select-none hover:shadow-lg hover:bg-blue-700'>
+          <button className='btn-rounded-md'>
             Get Started
           </button>
         </div>

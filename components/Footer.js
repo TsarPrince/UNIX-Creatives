@@ -81,7 +81,7 @@ export const Footer = () => {
             <input type='email' placeholder='Email address' className='bg-gray-800 border border-slate-400 px-4 py-2'></input>
             <textarea placeholder='Message' className='bg-gray-800 border border-slate-400 px-4 py-2'></textarea>
           </form>
-          <button className='bg-blue-600 text-slate-50 w-full text-lg px-8 py-3 rounded-md shadow-md font-medium select-none hover:shadow-lg hover:bg-blue-700'>
+          <button className='btn-rounded-md w-full'>
             <Link href='/'><a>Submit</a></Link>
           </button>
         </div>
