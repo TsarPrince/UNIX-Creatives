@@ -3,21 +3,44 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export const Navbar = () => {
+  // on mobile view
   const showHiddenNavbarContent = () => {
     document.querySelector('.navbar-hidden').classList.toggle('hidden');
   }
 
+  // typeof window === undefined on server side
+  if (typeof window !== 'undefined') {
+    const navbar = document.querySelector('#navbar');
+    let prevScrollTop = 0;
+    document.addEventListener('scroll', () => {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      if (scrollTop > prevScrollTop) {
+        navbar.style.top = `-${navbar.clientHeight}px`;
+      } else {
+        navbar.style.top = 0;
+      }
+      prevScrollTop = scrollTop;
+    })
+  }
+
+  const handleClick = (event) => {
+    const prev = document.querySelector('.nav-active');
+    const current = event.target;
+    prev.className = 'nav-inactive text-slate-600 hover:text-slate-500';
+    current.className = 'nav-active text-blue-500 hover:text-blue-600';
+  }
+
   return (
-    <nav>
-      <div className='flex justify-between items-center py-4 px-8'>
+    <nav id='navbar' className='bg-white/50 fixed z-50 inset-x-0 top-0 backdrop-blur-2xl transition-all shadow-md'>
+      <div className='relative flex justify-between items-center py-4 px-8'>
         <div className='flex-shrink-0'>
           <Image src='/logo.svg' width={127} height={24} alt='UNIX creatives logo'></Image>
         </div>
-        <div className='text-slate-600 space-x-12 text-lg font-semibold hidden lg:block'>
-          <Link href='/'><a className='text-blue-500 hover:text-blue-600'>Home</a></Link>
-          <Link href='/'><a className='hover:text-slate-500'>Services</a></Link>
-          <Link href='/'><a className='hover:text-slate-500'>Our Work</a></Link>
-          <Link href='/'><a className='hover:text-slate-500'>Pricing</a></Link>
+        <div className='navbar-hidden hidden bg-white py-4 text-lg font-semibold absolute top-full inset-x-0 flex flex-col items-center space-y-4 w-full shadow-md lg:relative lg:shadow-none lg:flex-row lg:justify-center lg:w-auto lg:space-y-0 lg:block lg:bg-transparent lg:space-x-12'>
+          <Link href='/#home'><a className='nav-active text-blue-600 hover:text-blue-500' onClick={handleClick}>Home</a></Link>
+          <Link href='/#services'><a className='nav-inactive text-slate-600 hover:text-slate-500' onClick={handleClick}>Services</a></Link>
+          <Link href='/#our-work'><a className='nav-inactive text-slate-600 hover:text-slate-500' onClick={handleClick}>Our Work</a></Link>
+          <Link href='/#pricing'><a className='nav-inactive text-slate-600 hover:text-slate-500' onClick={handleClick}>Pricing</a></Link>
         </div>
         <div className='hidden lg:block'>
           <button className='btn-rounded-md'>
@@ -35,13 +58,6 @@ export const Navbar = () => {
           </button>
         </div>
       </div>
-      <div className='navbar-hidden text-slate-600 text-lg font-semibold space-y-4 py-4 flex flex-col items-center hidden lg:hidden'>
-        <Link href='/'><a className='text-blue-500 hover:text-blue-600'>Home</a></Link>
-        <Link href='/'><a className='hover:text-slate-500'>Services</a></Link>
-        <Link href='/'><a className='hover:text-slate-500'>Our Work</a></Link>
-        <Link href='/'><a className='hover:text-slate-500'>Pricing</a></Link>
-      </div>
-
     </nav>
   )
 }

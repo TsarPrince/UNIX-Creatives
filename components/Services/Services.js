@@ -4,7 +4,7 @@ import styles from './services.module.scss'
 export const Services = () => {
   return (
 
-    <div className="py-12 bg-blue-50">
+    <div id="services" className="py-12 bg-blue-50">
       <div className="relative z-0 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <div className='absolute -z-10 lg:left-36'>

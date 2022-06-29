@@ -62,7 +62,7 @@ export const Pricing = () => {
   const btnInactiveStyles = 'bg-white text-black hover:bg-slate-100';
 
   return (
-    <div className="py-12 bg-white" >
+    <div id='pricing' className="py-12 bg-white" >
       <div className="max-w-7xl mx-auto px-4 space-y-8 sm:px-6 lg:px-8">
         
         {/* Pricing header */}
