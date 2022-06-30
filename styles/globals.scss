@@ -17,3 +17,10 @@
 * {
   font-family: Nunito, sans-serif;
 }
+html {
+  scroll-padding-top: 92px; /* height of sticky header */
+  @media (max-width: 991.98px) {
+    scroll-padding-top: 76px; /* height of sticky header */
+
+  }
+}
