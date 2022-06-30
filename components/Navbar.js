@@ -37,7 +37,7 @@ export const Navbar = () => {
           <Image src='/logo.svg' width={127} height={24} alt='UNIX creatives logo'></Image>
         </div>
         <div className='navbar-hidden hidden bg-white py-4 text-lg font-semibold absolute top-full inset-x-0 flex flex-col items-center space-y-4 w-full shadow-md lg:relative lg:shadow-none lg:flex-row lg:justify-center lg:w-auto lg:space-y-0 lg:block lg:bg-transparent lg:space-x-12'>
-          <Link href='/#home'><a className='nav-active text-blue-600 hover:text-blue-500' onClick={handleClick}>Home</a></Link>
+          <Link href='/#home'><a className='nav-active text-blue-500 hover:text-blue-600' onClick={handleClick}>Home</a></Link>
           <Link href='/#services'><a className='nav-inactive text-slate-600 hover:text-slate-500' onClick={handleClick}>Services</a></Link>
           <Link href='/#our-work'><a className='nav-inactive text-slate-600 hover:text-slate-500' onClick={handleClick}>Our Work</a></Link>
           <Link href='/#pricing'><a className='nav-inactive text-slate-600 hover:text-slate-500' onClick={handleClick}>Pricing</a></Link>
